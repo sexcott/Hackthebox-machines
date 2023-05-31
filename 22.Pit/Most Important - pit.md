@@ -1,0 +1,11 @@
+- Escanear por UDP ya que por TCP no hay nada interesante
+- **RECOMENDACION**: Uso de snmpbulkwalk en vez de snmpwalk(*Rapidez*)
+- Empezar el OID desde la raíz, ya que por defecto empieza desde el 2
+- **RCE** a través de SNMP (**Fallido, pero esta bien considerarlo**)
+- Credenciales predeterminadas
+- Explotar en RCE en el CME encontrado
+- Uso de herramienta s4vitar
+- Dumpear la base de datos(*credenciales encontradas*)
+- Reutilizacion de contraseña
+- Mirar el script encontrado en snmp
+- Explotar el script aprovechandose de lo encontrado

@@ -1,0 +1,21 @@
+''
+- Hacemos una peticion con curl a través del squidproxy
+- Tirar de la interfaz de glusterFS
+- Buscar en google como montar un volumen de glusterFS
+- Crear una montura con docker del vol que leakeamos ``Docker run --name mariadb -v $rutadelcontenedor/$rutademysql -d mariadb:$version``
+- Obtener una bash sobre el docker ``docker exec -it mariadb bash
+- Intentar conectarse a mysql del contenedor
+- Instalar el plugin necesario
+- Eliminar contenedor antiguo con ``docker rm $identificador``
+- Eliminar imagen antiguia con ``docker rmi $identificador
+-  ``Docker run --name mariadb -v $rutadelcontenedor:$rutamysql -v $rutadelplugin:/$rutadeconfiguracion
+- Tramitar una peticion con curl con el squidproxy de la siguiente manera ``curl --proxy "http://$user:passwd@ip" $localhost
+- Probar en fuzzear directorios del localhost
+- Observamos un SSTI, e intentamos enviar data al servidor web. Lo hacemos en formato .json porque en el leak de informacion que obtuvimos, vemos que la data la procesa como json. ``curl -s -X POST $site -H `Content-type: application/json -d {'$variable':'$valor'}``
+- Descargar los archivos que impedian que montaramos el volumen 1.
+- Montar el volumen 1
+- Meter nuestra pub.key en authorized_keys
+- Crear un script para ver las ip activas y los puertos
+- Hacer un LocalPortFortwarding
+- Buscar error de la pagina
+- Conectarse a azure y buscar por lo que nos interesa

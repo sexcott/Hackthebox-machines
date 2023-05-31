@@ -1,0 +1,22 @@
+## Tecnicas utilizados
+-   HTTP/3 Enumeration
+-   Recompiling curl to accept HTTP/3 requests
+-   Information Leakage
+-   Brute force in authentication panel
+-   XSS Injection
+-   Abusing Esigate (ESI Injection - RCE)
+-   Manipulating passwords in the database
+-   Abuing POS Print Server (File Hijacking Attack)
+## Procedimiento
+- Virtual Hosting
+- Searching HTTP/3 in github(quiche), nos habilita el HTTP/3 en curl porq inicialmente da problemas.
+- Downloads PDF's
+- Crear diccionario con los correos encontrales y añadir unos cuantos con la extension del respectivo pais. Posteriormente hacer un ataque de fuerza bruta contra el sitio de el login.
+- Fuzzear por extensiones \*.php en el panel que se obtiene despues de iniciar sesión 
+- Vulnerable a XSS pero no sirve para nada.
+- En base a la documentacion sobre RCE de Esigate(*Gosecure*), probar en el campo vulnerable a XSS si es capaz de ejecutar comando atravez de este.
+- Reutilizacion de contraseña pero con un Salt que se encuentra en los archivos *login.php* 
+- Manipulacion de contraseñas en la base de datos.
+- Agregamos una "impresorar" con nuestra IP y el respectivo puerto. 
+- Crear bucle infito que cada segundo cree una variable con el año, fecha, hora, minuto y segundo, posteriormentr crear una condicional que revise si existe tal archivo con el formato anterior, si es asi, que lance un aviso. ``while true; do date=$(date +%F_%H:%M:%S); if [ -r $date ]; then echo "Se ha creado el archivo"; break; fi; done ``
+- Con lo anterior, podemos secuestrar el contenido del archivo aprovechando que hay un delay de 0.5 segundos, creamos un enlace simbolico de la *id_rsa* hacia el archivo que esta creando con la fecha. ``while true; do date=$(date +%F_%H:%M:%S); if [ -r $date ]; then ln -s -f /home/srvadm/.ssh/id_rsa $date; break; fi; done`` 

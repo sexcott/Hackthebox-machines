@@ -1,0 +1,2 @@
+## Tecnicas utilizadas
+## Procedimiento

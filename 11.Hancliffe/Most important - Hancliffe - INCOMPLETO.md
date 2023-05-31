@@ -1,0 +1,21 @@
+## Tecnicas utilizadas
+- Abusing URI Normalization Server Side Template Injection (SSTI) [NUXEO Vulnerability]
+- Unified Remote 3 Exploitation (RCE) 
+- Decrypt Mozilla protected passwords Reversing EXE in Ghidra Buffer Overflow (Socket Reuse Technique) [AVANZADO]
+## Procedimiento
+- fuzzing web
+- Burpsuite. Notamos que la cookie **JSESSIONID** es la tipica que asigna el framework Tomcat.
+- Fuzzear por archivos .jsp, viendo que por detras esta un tomcat.
+- SSTI en el CME
+- Una vez encontrado el template que funciona correctamente para el SSTI, explotarlo. Es necesario urlencodear las instrucciones y las instrucciones de PS ponerlas en base64.
+- Entablar reverse shell en PS con el repositorio de **nishang** 
+- Buscamos que usuario pertenece al grupo *Remote Management User* 
+- Buscar el OneLiner para ver los puertos en PS. A este se le puede agregar un filtro para filtrar por lo que nos interesa ``FT -Property $data,$data,$data``
+- Buscar vulnerabilidad para el proceso interesante encontrado
+- Remote Port Fordwarding del puerto para dejarlo expuesto y poder explotarlo.
+- Crear un binario malicioso con **MSFvenom**, ejecutar el exploit y chinpum.
+- Tirar de **Winpeas.exe**
+- Generar la password con los datos encontrados en el Winpeas para el usuario **Development**
+- Remote Port Fordwarding de winrm para conectarnos como el usuario development y con la contraseña generada
+- Descargar el binary para analizarlo con **Ghidra**
+- 
