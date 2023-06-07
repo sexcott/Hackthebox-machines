@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8998961d3f8aea99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cheat sheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "monitors",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -155,10 +168,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "32fbf9c17669bc42",
+  "active": "8998961d3f8aea99",
   "lastOpenFiles": [
-    "18.Monitor/Most important - Monitor.md",
+    "46. HackBack/Most Important - HackBack.md",
+    "46. HackBack/Images/Pasted image 20230603191429.png",
+    "46. HackBack/Images",
     "Cheat sheet.md",
+    "45. BackEnd/MOST IMPORTANT  - BACKEND.md",
+    "46. HackBack",
+    "45. BackEnd/Images/Pasted image 20230603111144.png",
+    "45. BackEnd/Images",
+    "45. BackEnd",
+    "18.Monitor/Most important - Monitor.md",
     "traverxec/Most important - Traverxec.md",
     "Tabby/Most important - Tabby.md",
     "Fighter/Most import - Fighter.md",
