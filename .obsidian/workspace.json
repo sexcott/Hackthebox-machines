@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "32fbf9c17669bc42",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cheat sheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8998961d3f8aea99",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheat sheet.md",
+                "file": "50. Static/Most Important - Static.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "check",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheat sheet.md",
+                "file": "50. Static/Most Important - Static.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheat sheet.md",
+                "file": "50. Static/Most Important - Static.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,16 +133,15 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheat sheet.md"
+                "file": "50. Static/Most Important - Static.md"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -170,20 +156,38 @@
   },
   "active": "8998961d3f8aea99",
   "lastOpenFiles": [
+    "50. Static/Images/Pasted image 20230608112557.png",
+    "50. Static/Images",
+    "49. Blunder/Most Important - Blunder.md",
+    "50. Static/Most Important - Static.md",
+    "50. Static",
+    "49. Blunder/Images/Pasted image 20230608085510.png",
+    "49. Blunder/Images",
+    "48. Holiday/Most Important - Holiday.md",
+    "49. Blunder",
+    "47. October/Most Important - October.md",
+    "48. Holiday/Images/Pasted image 20230607115931.png",
+    "48. Holiday/Images",
+    "48. Holiday",
+    "47. October/Images/Pasted image 20230607091204.png",
+    "47. October/Images/Pasted image 20230607091143.png",
+    "47. October/Images/Pasted image 20230607090938.png",
+    "47. October/Images/Pasted image 20230607090732.png",
+    "45. BackEnd/MOST IMPORTANT  - BACKEND.md",
     "46. HackBack/Most Important - HackBack.md",
+    "47. October/Images/Pasted image 20230607090345.png",
+    "47. October/Images",
+    "Cheat sheet.md",
+    "20.Overflow/Most important - OverFlow.md",
+    "47. October",
     "46. HackBack/Images/Pasted image 20230603191429.png",
     "46. HackBack/Images",
-    "Cheat sheet.md",
-    "45. BackEnd/MOST IMPORTANT  - BACKEND.md",
     "46. HackBack",
     "45. BackEnd/Images/Pasted image 20230603111144.png",
-    "45. BackEnd/Images",
-    "45. BackEnd",
     "18.Monitor/Most important - Monitor.md",
     "traverxec/Most important - Traverxec.md",
     "Tabby/Most important - Tabby.md",
     "Fighter/Most import - Fighter.md",
-    "Tabby",
     "Untitled 1.md",
     "Overflow/Most important - OverFlow.md",
     "Enterprise/Most important - Enterprise.md",
