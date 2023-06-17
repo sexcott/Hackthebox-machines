@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "003b1babee7044f7",
+        "id": "6f435a5875ac0363",
         "type": "tabs",
         "children": [
           {
-            "id": "8998961d3f8aea99",
+            "id": "0d8e8b820c30c735",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "50. Static/Most Important - Static.md",
+                "file": "63. Sandworm/Most Important - SandWorm.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "check",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 298.5
   },
   "right": {
     "id": "53d04d137f06f960",
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "50. Static/Most Important - Static.md",
+                "file": "63. Sandworm/Most Important - SandWorm.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "50. Static/Most Important - Static.md",
+                "file": "63. Sandworm/Most Important - SandWorm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "50. Static/Most Important - Static.md"
+                "file": "63. Sandworm/Most Important - SandWorm.md"
               }
             }
           }
@@ -154,46 +154,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8998961d3f8aea99",
+  "active": "0d8e8b820c30c735",
   "lastOpenFiles": [
-    "50. Static/Images/Pasted image 20230608112557.png",
-    "50. Static/Images",
-    "49. Blunder/Most Important - Blunder.md",
-    "50. Static/Most Important - Static.md",
-    "50. Static",
-    "49. Blunder/Images/Pasted image 20230608085510.png",
-    "49. Blunder/Images",
-    "48. Holiday/Most Important - Holiday.md",
-    "49. Blunder",
-    "47. October/Most Important - October.md",
-    "48. Holiday/Images/Pasted image 20230607115931.png",
-    "48. Holiday/Images",
-    "48. Holiday",
-    "47. October/Images/Pasted image 20230607091204.png",
-    "47. October/Images/Pasted image 20230607091143.png",
-    "47. October/Images/Pasted image 20230607090938.png",
-    "47. October/Images/Pasted image 20230607090732.png",
-    "45. BackEnd/MOST IMPORTANT  - BACKEND.md",
-    "46. HackBack/Most Important - HackBack.md",
-    "47. October/Images/Pasted image 20230607090345.png",
-    "47. October/Images",
-    "Cheat sheet.md",
-    "20.Overflow/Most important - OverFlow.md",
-    "47. October",
-    "46. HackBack/Images/Pasted image 20230603191429.png",
-    "46. HackBack/Images",
-    "46. HackBack",
-    "45. BackEnd/Images/Pasted image 20230603111144.png",
-    "18.Monitor/Most important - Monitor.md",
-    "traverxec/Most important - Traverxec.md",
-    "Tabby/Most important - Tabby.md",
-    "Fighter/Most import - Fighter.md",
+    "63. Sandworm/Images/Pasted image 20230617101735.png",
+    "63. Sandworm/Images",
+    "61. Search/Most Important - Search.md",
+    "63. Sandworm/Most Important - SandWorm.md",
+    "63. Sandworm",
+    "62. Ariekei/Most Imporant - Ariekei.md",
+    "61. Search/Images/Pasted image 20230616192710.png",
+    "61. Search/Images/Pasted image 20230616192444.png",
+    "61. Search/Images/Pasted image 20230616192420.png",
+    "62. Ariekei",
+    "14.Intelligence/Most important - Intelligence.md",
+    "1.Altered/1.Altered/Most important - Altered.md",
+    "33.Sizzle/Most important - Sizzle.md",
+    "15.Mantis/Most important - Mantis.md",
+    "54. Toby/Most Important - Toby.md",
+    "61. Search/Images/Pasted image 20230616125734.png",
+    "61. Search/Images",
+    "60. Breadcrumbs/Most Important - Breadcrumbs.md",
+    "61. Search",
+    "60. Breadcrumbs/Images/Pasted image 20230616115111.png",
+    "60. Breadcrumbs/Images/Pasted image 20230616115033.png",
+    "60. Breadcrumbs/Images/Pasted image 20230616115005.png",
+    "41.Tentacle/Most important - Tentacle.md",
+    "41.Tentacle/Procedimiento - Tentacle.md",
+    "59. Sense/Most Important - Sense.md",
+    "60. Breadcrumbs/Images/Pasted image 20230615133553.png",
+    "60. Breadcrumbs/Images",
+    "60. Breadcrumbs",
+    "52. Topology/Import Important - Topology.md",
+    "59. Sense/Images/Pasted image 20230615120759.png",
+    "59. Sense/Images",
+    "58. Cache/Most Important - Cache.md",
+    "59. Sense",
+    "58. Cache/Images/Pasted image 20230615093833.png",
+    "58. Cache/Images",
+    "57. Unobtainium/Most Important - Unobtainium.md",
     "Untitled 1.md",
-    "Overflow/Most important - OverFlow.md",
-    "Enterprise/Most important - Enterprise.md",
-    "Sink/Most Important - Sink.md",
-    "Epsilon/Most Important - Epsilon.md",
-    "Quick/Most important - Quick.md",
-    "Tally/Most important - Tally.md"
+    "Untitled.md",
+    "56. Control/Most Important - Control.md",
+    "Cheat sheet.md",
+    "55. backdoor/Most important - Backdoor.md",
+    "53. Querier/Most Important - Querier.md",
+    "48. Holiday/Most Important - Holiday.md",
+    "47. October/Most Important - October.md",
+    "46. HackBack/Most Important - HackBack.md",
+    "51. Aragog/Most Important - Aragog.md"
   ]
 }

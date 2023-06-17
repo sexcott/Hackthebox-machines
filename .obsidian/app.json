@@ -1,4 +1,6 @@
 {
   "newFileLocation": "root",
-  "attachmentFolderPath": "./Images"
+  "attachmentFolderPath": "./Images",
+  "focusNewTab": false,
+  "promptDelete": false
 }
