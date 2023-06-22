@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6f435a5875ac0363",
+        "id": "46f25db0980a06a0",
         "type": "tabs",
         "children": [
           {
-            "id": "0d8e8b820c30c735",
+            "id": "9d8b4b045723484a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "63. Sandworm/Most Important - SandWorm.md",
-                "mode": "source",
+                "file": "Cheat sheet.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "63. Sandworm/Most Important - SandWorm.md",
+                "file": "Cheat sheet.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "63. Sandworm/Most Important - SandWorm.md",
+                "file": "Cheat sheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "63. Sandworm/Most Important - SandWorm.md"
+                "file": "Cheat sheet.md"
               }
             }
           }
@@ -154,53 +154,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0d8e8b820c30c735",
+  "active": "9d8b4b045723484a",
   "lastOpenFiles": [
-    "63. Sandworm/Images/Pasted image 20230617101735.png",
+    "66. BackendTwo/Most important - BackendTwo.md",
+    "66. BackendTwo/Images/Pasted image 20230620184107.png",
+    "66. BackendTwo/Images",
+    "Cheat sheet.md",
+    "66. BackendTwo",
+    "Untitled.md",
+    "65. SwagShop/Most Important - SwagShop.md",
+    "65. SwagShop/Images/Pasted image 20230619193543.png",
+    "65. SwagShop/Images",
+    "64. Forge/Most important - Forge.md",
+    "65. SwagShop",
+    "64. Forge/Images/Pasted image 20230619192553.png",
+    "62. Ariekei/Most Imporant - Ariekei.md",
+    "63. Sandworm/Most Important - SandWorm.md",
+    "62. Ariekei/Images/Pasted image 20230619145707.png",
+    "62. Ariekei/Images/Pasted image 20230619142016.png",
+    "64. Forge/Images/Pasted image 20230619131800.png",
+    "64. Forge/Images",
+    "64. Forge",
+    "62. Ariekei/Images/Pasted image 20230619091433.png",
+    "62. Ariekei/Images",
+    "63. Sandworm/Images/Pasted image 20230618171852.png",
+    "63. Sandworm/Images/Pasted image 20230618171830.png",
+    "63. Sandworm/Images/Pasted image 20230618171718.png",
     "63. Sandworm/Images",
     "61. Search/Most Important - Search.md",
-    "63. Sandworm/Most Important - SandWorm.md",
     "63. Sandworm",
-    "62. Ariekei/Most Imporant - Ariekei.md",
-    "61. Search/Images/Pasted image 20230616192710.png",
-    "61. Search/Images/Pasted image 20230616192444.png",
-    "61. Search/Images/Pasted image 20230616192420.png",
     "62. Ariekei",
     "14.Intelligence/Most important - Intelligence.md",
     "1.Altered/1.Altered/Most important - Altered.md",
     "33.Sizzle/Most important - Sizzle.md",
     "15.Mantis/Most important - Mantis.md",
     "54. Toby/Most Important - Toby.md",
-    "61. Search/Images/Pasted image 20230616125734.png",
-    "61. Search/Images",
     "60. Breadcrumbs/Most Important - Breadcrumbs.md",
-    "61. Search",
-    "60. Breadcrumbs/Images/Pasted image 20230616115111.png",
-    "60. Breadcrumbs/Images/Pasted image 20230616115033.png",
-    "60. Breadcrumbs/Images/Pasted image 20230616115005.png",
     "41.Tentacle/Most important - Tentacle.md",
     "41.Tentacle/Procedimiento - Tentacle.md",
     "59. Sense/Most Important - Sense.md",
-    "60. Breadcrumbs/Images/Pasted image 20230615133553.png",
-    "60. Breadcrumbs/Images",
-    "60. Breadcrumbs",
     "52. Topology/Import Important - Topology.md",
-    "59. Sense/Images/Pasted image 20230615120759.png",
-    "59. Sense/Images",
     "58. Cache/Most Important - Cache.md",
-    "59. Sense",
-    "58. Cache/Images/Pasted image 20230615093833.png",
-    "58. Cache/Images",
     "57. Unobtainium/Most Important - Unobtainium.md",
     "Untitled 1.md",
-    "Untitled.md",
     "56. Control/Most Important - Control.md",
-    "Cheat sheet.md",
     "55. backdoor/Most important - Backdoor.md",
     "53. Querier/Most Important - Querier.md",
-    "48. Holiday/Most Important - Holiday.md",
-    "47. October/Most Important - October.md",
-    "46. HackBack/Most Important - HackBack.md",
-    "51. Aragog/Most Important - Aragog.md"
+    "48. Holiday/Most Important - Holiday.md"
   ]
 }
