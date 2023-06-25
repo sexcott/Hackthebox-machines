@@ -2,5 +2,6 @@
   "newFileLocation": "root",
   "attachmentFolderPath": "./Images",
   "focusNewTab": false,
-  "promptDelete": false
+  "promptDelete": false,
+  "spellcheck": false
 }

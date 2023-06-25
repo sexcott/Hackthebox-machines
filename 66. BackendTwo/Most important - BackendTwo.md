@@ -13,7 +13,7 @@
 - Abusing pam_wordle (Privilege Escalation)
 ## Procedimiento
 
-![[Pasted image 20230620184107.png]]
+![[Pasted image 20230623114752.png]]
 
 #### Reconocimiento
 
