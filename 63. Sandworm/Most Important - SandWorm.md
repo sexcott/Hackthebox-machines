@@ -1,5 +1,5 @@
 ----
-- Tags: #flask #ssti #firejail #library-impersonation-attack #rust #SUID #symbolic-link
+- Tags: #flask #ssti #firejail #library-impersonation-attack #rust #SUID #symbolic-link #seasson2 
 -------
 ## Técnicas utilizadas
 - Server Side Template Injection(Flask)

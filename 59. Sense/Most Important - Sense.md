@@ -1,5 +1,5 @@
 ---------
-- Tags: #python-scripgin #pfsense #information-leakage
+- Tags: #python-scripting #pfsense #information-leakage
 ---------
 ## Tecnicas utilizadas
 - Information Leakage  

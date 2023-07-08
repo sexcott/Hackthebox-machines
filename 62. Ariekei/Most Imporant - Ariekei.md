@@ -1,5 +1,5 @@
 ---------
-- Tags: #shellshock #cgi-bin #image-magic #waf #docker #docker-group #pivoting 
+- Tags: #shellshock #cgi-bin #image-magick #waf #docker #docker-group #pivoting 
 --------------
 ## Técnicas utilizadas
 - ImageTragick Exploitation (Specially designed '.mvg' file)  

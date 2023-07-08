@@ -1,5 +1,5 @@
 --------
-- Tags: #binwalk #sqlite3 #image-magic #git_dumper #Arbitrary-File-Read #CVE-2022-4510
+- Tags: #binwalk #sqlite3 #image-magick #git_dumper #Arbitrary-File-Read #CVE-2022-4510 #seasson2 
 --------------
 ## Técnicas utilizadas
 - .Git abuse[git_dumper.py]
