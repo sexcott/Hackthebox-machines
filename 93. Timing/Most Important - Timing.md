@@ -1,5 +1,5 @@
 --------
-- Tags:
+- Tags: #change-date #lfi #lfi-wrapper #base64-wrapper #file-upload #sudoers #symbolic-link #python-scripting #bash-scripting 
 -  ---------------
 ## Técnicas utilizadas
 - Local File Inclusion (LFI)  
