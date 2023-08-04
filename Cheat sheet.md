@@ -17,6 +17,7 @@
 **Tocar puertos con knock**: `knock 10.10.10.43 571:tcp 290:tcp 911:tcp`
 **Cambiar la zona horaria**: `sudo timedatectl set-timezone GMT`
 **Cambiar la hora a la misma que la maquina**: `sudo date --set $(curl http://timing.htb -I -s| grep Date | awk '{print $6}')`
+**Deshabilitar las preguntas de descarga en FTP**: `prompt off`
 
 ---------------
 ## Windows

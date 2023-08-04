@@ -1,5 +1,5 @@
 -------
-- Tags: #odt #macros #gopher #smtp #cron-job #reversing #path-hijacking 
+- Tags: #odt #macros #gopher #smtp #cron-job #reversing #path-hijacking
 -------------
 ## Técnicas utilizadas
 - Samba enumeration

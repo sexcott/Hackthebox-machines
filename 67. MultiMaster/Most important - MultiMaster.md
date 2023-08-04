@@ -452,4 +452,3 @@ PS > sc.exe start browser
 Y ya podriamos conectarnos a la maquina victima como el usuario **Administrator** a través de **Evil-WinRm**.
 
 
-"MultiMaster" ^626d41
