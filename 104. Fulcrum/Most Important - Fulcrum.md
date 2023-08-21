@@ -1,5 +1,5 @@
 ---------
-- Tags:
+- Tags: #api #API-Enumeration #XXE #XXE-Blind #XXE-SSRF #XXE-RFI #pscredencial #pivoting #chisel #scriptblocks #bypassing-firewall #smb #net-use 
 - --------
 ## Técnicas utilizadas
 - API Enumeration - Endpoint Brute Force  

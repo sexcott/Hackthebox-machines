@@ -73,6 +73,7 @@ notes=/ninevehNotes/../../../../../../etc/passwd
 /proc/net/tcp          #Podemos listar los puertos que estan abiertos internamente
 /proc/self/environ     #Listamos las variables de entorno
 /etc/os-release        #Listamos el sistema operativo en uso
+/proc/sched_debug      #Listamos algunos procesos que estan corriendo en el sistema
 /proc/schedstat        #proporciona estadísticas de planificación del kernel
 /etc/knockd.conf       #Lista la configuración de Knock
 ```

@@ -4,9 +4,38 @@
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
-  "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#buffer-overflow",
+      "color": {
+        "a": 1,
+        "rgb": 15402245
+      }
+    },
+    {
+      "query": "tag:#socket-re-use",
+      "color": {
+        "a": 1,
+        "rgb": 4342338
+      }
+    },
+    {
+      "query": "tag:#xss",
+      "color": {
+        "a": 1,
+        "rgb": 330987
+      }
+    },
+    {
+      "query": "",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.9095694691248678,
+  "scale": 0.1727773834291917,
   "close": true
 }

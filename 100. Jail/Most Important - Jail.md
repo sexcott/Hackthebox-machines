@@ -340,7 +340,7 @@ Si lo volvemos a correr, nos mostrara un error, lo vamos a solucionar matando el
 Lo siguiente sera ver cuantos caracteres necesitamos antes de sobreescribir **EIP** asi que crearemos un patrón:
 ```
 gef> pattern create
-```
+ M-...........................................,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,LÇ```
 
 Y posteriormente pasarle el registro para que nos represente cuantos caracteres son necesarios:
 ```
@@ -351,7 +351,9 @@ Como no esta habilitado el **NX** ( Data Execution Prevention ) podemos aprovech
 
 **Listamos lo que hay en la pila (ESP)**:
 ```
-gef> x/80wx $esp
+	gef> x/80wx bg_______
+	
+	__
 ```
 
 **Listamos lo que hay en la pila (ESP) a nivel de strings**:
