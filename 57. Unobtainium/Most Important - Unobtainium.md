@@ -77,7 +77,7 @@ Si intentamos replicar la peticion con **curl** podemos ver que nos manda un men
 ```
 
 Una vez hecha la petición, podemos volver a intentar el **RCE** con el *Google CloudStorage Commands* y vemos que ahora si tenemos la capacidad de ejecutar los comandos.
-
+00
 ---------------------
 #### Kubernetes (Interacting with the API)
 

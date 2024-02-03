@@ -32,8 +32,10 @@
 **Listar contenido oculto:** `dir -Force`
 **Listar reglas de firewall:** `netsh advfirewall show currentprofile`
 **Listar permisos de un archivo:** `icacls archivo`
+**Barrido de IPS desde PowerShell**: `powershell-session 1..254 | % {"172.16.5.$($_): $(Test-Connection -count 1 -comp 172.15.5.$($_) -quiet)"}
+`
 
-----------
+z
 ## Grupos y los privilegios que tienen(linux)
 **Privilegios:**
 1. **ADM**. Permite leer logs.
